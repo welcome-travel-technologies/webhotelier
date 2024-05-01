@@ -19,13 +19,13 @@ module Webhotelier
 
       class RoomStay
         include Virtus.model
-        attribute :roomType, String
-        attribute :roomName, String
-        attribute :rateName, String
-        attribute :rateDesc, String
-        attribute :rateID, Integer
+        attribute :room_type, String
+        attribute :room_name, String
+        attribute :rate_name, String
+        attribute :rate_desc, String
+        attribute :rate_i_d, Integer
         attribute :board, :Integer
-        attribute :externalRateInfo, String
+        attribute :external_rate_info, String
         attribute :rooms, Integer
         attribute :from, DateTime
         attribute :to, DateTime
