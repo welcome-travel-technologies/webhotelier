@@ -22,7 +22,7 @@ module Webhotelier
     def invoke(resource, method, options = {})
       constantize("webhotelier/#{resource}").send(
         method,
-        options.merge(client: self)
+        **options.merge(client: self)
       )
     end
 
